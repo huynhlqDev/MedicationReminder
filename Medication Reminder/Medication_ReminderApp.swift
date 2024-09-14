@@ -2,7 +2,7 @@
 //  Medication_ReminderApp.swift
 //  Medication Reminder
 //
-//  Created by V Scarlata on 2/27/24.
+//  Created by Udacity
 //
 
 import SwiftUI
@@ -12,7 +12,7 @@ import SwiftData
 struct Medication_ReminderApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Medication.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -25,8 +25,9 @@ struct Medication_ReminderApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MedicationDashboard()
         }
         .modelContainer(sharedModelContainer)
     }
 }
+

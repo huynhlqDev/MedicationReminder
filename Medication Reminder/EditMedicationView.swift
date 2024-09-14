@@ -2,28 +2,33 @@
 //  EditMedicationView.swift
 //  Medication Reminder
 //
-//  Created by V Scarlata on 4/11/24.
-//
+//  Created by Udacity
 
 import SwiftUI
 import SwiftData
 
+// a view to edit medication
+
 struct EditMedicationView: View {
     @Environment(\.modelContext) private var modelContext
-    @Environment(\.dismiss) private var dismiss
-    
-    @State private var name: String
-    @State private var dosage: String
-    @State private var time: Date
-    @State private var isReminderSet: Bool
-    @State private var reminderInterval: TimeInterval?
+    @Environment(\.dismiss) private var dismiss // For dismissing the view
 
-    init(medication: Medication) {
-        self._name = State(initialValue: medication.name)
-        self._dosage = State(initialValue: medication.dosage)
-        self._time = State(initialValue: Date(timeIntervalSinceReferenceDate: medication.time))
-        self._isReminderSet = State(initialValue: medication.isReminderSet)
-        self._reminderInterval = State(initialValue: medication.reminderInterval)
+    let medication: Medication? // Can be nil when adding new
+
+    @State private var name: String = ""
+    @State private var dosage: String = ""
+    @State private var time: Date = Date()  // Notice: Using Date for time editing
+    @State private var isReminderSet: Bool = false
+
+    init(medication: Medication?) {
+        self.medication = medication
+        // Initialize state variables based on existing Medication if editing
+        if let medication = medication {
+            _name = State(initialValue: medication.name)
+            _dosage = State(initialValue: medication.dosage)
+            _time = State(initialValue: Date(timeIntervalSinceReferenceDate: medication.time))
+            _isReminderSet = State(initialValue: medication.isReminderSet)
+        }
     }
 
     var body: some View {
@@ -33,35 +38,46 @@ struct EditMedicationView: View {
                 TextField("Dosage", text: $dosage)
                 DatePicker("Time", selection: $time, displayedComponents: .hourAndMinute)
                 Toggle("Reminder", isOn: $isReminderSet)
-
-                if isReminderSet {
-                    Picker("Reminder Interval (Hours)", selection: $reminderInterval) {
-                        ForEach(0..<25) { hour in
-                            Text("\(hour)") .tag(Double(hour * 3600))
-                        }
-                    }
-                }
-
-                Button("Save Changes") {
-                    saveChanges()
-                }
             }
         }
-        .navigationTitle("Edit Medication")
+        .navigationTitle(medication == nil ? "Add Medication" : "Edit Medication")
+        .toolbar {
+            ToolbarItem(placement: .confirmationAction) { saveButton }
+            ToolbarItem(placement: .cancellationAction) { cancelButton }
+        }
+    }
+
+    private var saveButton: some View {
+        Button("Save") {
+            saveChanges()
+            dismiss()
+        }
+    }
+
+    private var cancelButton: some View {
+        Button("Cancel", role: .cancel) {
+            dismiss()
+        }
     }
 
     private func saveChanges() {
-        if let existingMedication = try? modelContext.existingObject(medication) {
+        if let existingMedication = medication {
+           // Update existing medication
             existingMedication.name = name
             existingMedication.dosage = dosage
             existingMedication.time = time.timeIntervalSinceReferenceDate
             existingMedication.isReminderSet = isReminderSet
-            existingMedication.reminderInterval = reminderInterval
-
-            try? modelContext.save()
-            dismiss()
         } else {
-            // Handle error if medication not found (unlikely)
+            // Create a new medication
+            let newMedication = Medication(name: name, dosage: dosage, time: time.timeIntervalSinceReferenceDate, isReminderSet: isReminderSet)
+            modelContext.insert(newMedication)
         }
+
+        // Note: Consider using try? modelContext.save() for error handling
     }
+}
+
+#Preview {
+    EditMedicationView(medication: Medication.example)
+        .modelContainer(for: Medication.self, inMemory: true)
 }

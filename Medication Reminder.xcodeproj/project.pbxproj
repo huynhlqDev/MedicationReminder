@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C03A6A612B8E5331008E8380 /* Medication_ReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A6A602B8E5331008E8380 /* Medication_ReminderApp.swift */; };
-		C03A6A632B8E5331008E8380 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A6A622B8E5331008E8380 /* ContentView.swift */; };
-		C03A6A652B8E5331008E8380 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A6A642B8E5331008E8380 /* Item.swift */; };
 		C03A6A672B8E5332008E8380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C03A6A662B8E5332008E8380 /* Assets.xcassets */; };
 		C03A6A6A2B8E5332008E8380 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C03A6A692B8E5332008E8380 /* Preview Assets.xcassets */; };
 		C03A6A742B8E5332008E8380 /* Medication_ReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A6A732B8E5332008E8380 /* Medication_ReminderTests.swift */; };
 		C03A6A7E2B8E5332008E8380 /* Medication_ReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A6A7D2B8E5332008E8380 /* Medication_ReminderUITests.swift */; };
 		C03A6A802B8E5332008E8380 /* Medication_ReminderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A6A7F2B8E5332008E8380 /* Medication_ReminderUITestsLaunchTests.swift */; };
+		C070F7B12BD1839E00824B8C /* MedicationDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070F7B02BD1839E00824B8C /* MedicationDashboard.swift */; };
+		C0D1FDBC2BC8A51100F5E6CE /* medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D1FDBB2BC8A51100F5E6CE /* medication.swift */; };
+		C0D1FDC72BC8E27600F5E6CE /* EditMedicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D1FDC62BC8E27600F5E6CE /* EditMedicationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +38,6 @@
 /* Begin PBXFileReference section */
 		C03A6A5D2B8E5331008E8380 /* Medication Reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Medication Reminder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C03A6A602B8E5331008E8380 /* Medication_ReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication_ReminderApp.swift; sourceTree = "<group>"; };
-		C03A6A622B8E5331008E8380 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C03A6A642B8E5331008E8380 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C03A6A662B8E5332008E8380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C03A6A692B8E5332008E8380 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C03A6A6F2B8E5332008E8380 /* Medication ReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Medication ReminderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +45,10 @@
 		C03A6A792B8E5332008E8380 /* Medication ReminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Medication ReminderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C03A6A7D2B8E5332008E8380 /* Medication_ReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication_ReminderUITests.swift; sourceTree = "<group>"; };
 		C03A6A7F2B8E5332008E8380 /* Medication_ReminderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication_ReminderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C070F7B02BD1839E00824B8C /* MedicationDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationDashboard.swift; sourceTree = "<group>"; };
+		C0D1FDBB2BC8A51100F5E6CE /* medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medication.swift; sourceTree = "<group>"; };
+		C0D1FDBD2BC8A89600F5E6CE /* Medication-Reminder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Medication-Reminder-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C0D1FDC62BC8E27600F5E6CE /* EditMedicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMedicationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +99,11 @@
 		C03A6A5F2B8E5331008E8380 /* Medication Reminder */ = {
 			isa = PBXGroup;
 			children = (
+				C0D1FDBD2BC8A89600F5E6CE /* Medication-Reminder-Info.plist */,
 				C03A6A602B8E5331008E8380 /* Medication_ReminderApp.swift */,
-				C03A6A622B8E5331008E8380 /* ContentView.swift */,
-				C03A6A642B8E5331008E8380 /* Item.swift */,
+				C070F7B02BD1839E00824B8C /* MedicationDashboard.swift */,
+				C0D1FDC62BC8E27600F5E6CE /* EditMedicationView.swift */,
+				C0D1FDBB2BC8A51100F5E6CE /* medication.swift */,
 				C03A6A662B8E5332008E8380 /* Assets.xcassets */,
 				C03A6A682B8E5332008E8380 /* Preview Content */,
 			);
@@ -260,8 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C03A6A632B8E5331008E8380 /* ContentView.swift in Sources */,
-				C03A6A652B8E5331008E8380 /* Item.swift in Sources */,
+				C070F7B12BD1839E00824B8C /* MedicationDashboard.swift in Sources */,
+				C0D1FDC72BC8E27600F5E6CE /* EditMedicationView.swift in Sources */,
+				C0D1FDBC2BC8A51100F5E6CE /* medication.swift in Sources */,
 				C03A6A612B8E5331008E8380 /* Medication_ReminderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,24 +429,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Medication Reminder/Preview Content\"";
-				DEVELOPMENT_TEAM = N7TLWD9UNX;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Medication-Reminder-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "VSUdacity.Medication-Reminder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,24 +461,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Medication Reminder/Preview Content\"";
-				DEVELOPMENT_TEAM = N7TLWD9UNX;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Medication-Reminder-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "VSUdacity.Medication-Reminder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -481,14 +493,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N7TLWD9UNX;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "VSUdacity.Medication-ReminderTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -501,14 +513,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N7TLWD9UNX;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "VSUdacity.Medication-ReminderTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -520,13 +532,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N7TLWD9UNX;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "VSUdacity.Medication-ReminderUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -538,13 +550,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N7TLWD9UNX;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "VSUdacity.Medication-ReminderUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
