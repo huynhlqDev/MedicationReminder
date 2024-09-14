@@ -8,7 +8,7 @@
 import XCTest
 @testable import Medication_Reminder
 
-final class Medication_ReminderTests: XCTestCase {
+final class MedicationReminderTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

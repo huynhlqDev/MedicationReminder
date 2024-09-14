@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class Medication_ReminderUITestsLaunchTests: XCTestCase {
+final class MedicationReminderUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

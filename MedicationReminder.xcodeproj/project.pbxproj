@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C03A6A612B8E5331008E8380 /* Medication_ReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A6A602B8E5331008E8380 /* Medication_ReminderApp.swift */; };
+		C03A6A612B8E5331008E8380 /* MedicationReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A6A602B8E5331008E8380 /* MedicationReminderApp.swift */; };
 		C03A6A672B8E5332008E8380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C03A6A662B8E5332008E8380 /* Assets.xcassets */; };
-		C03A6A6A2B8E5332008E8380 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C03A6A692B8E5332008E8380 /* Preview Assets.xcassets */; };
-		C03A6A742B8E5332008E8380 /* Medication_ReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A6A732B8E5332008E8380 /* Medication_ReminderTests.swift */; };
-		C03A6A7E2B8E5332008E8380 /* Medication_ReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A6A7D2B8E5332008E8380 /* Medication_ReminderUITests.swift */; };
-		C03A6A802B8E5332008E8380 /* Medication_ReminderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A6A7F2B8E5332008E8380 /* Medication_ReminderUITestsLaunchTests.swift */; };
+		C03A6A6A2B8E5332008E8380 /* PreviewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C03A6A692B8E5332008E8380 /* PreviewAssets.xcassets */; };
+		C03A6A742B8E5332008E8380 /* MedicationReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A6A732B8E5332008E8380 /* MedicationReminderTests.swift */; };
+		C03A6A7E2B8E5332008E8380 /* MedicationReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A6A7D2B8E5332008E8380 /* MedicationReminderUITests.swift */; };
+		C03A6A802B8E5332008E8380 /* MedicationReminderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03A6A7F2B8E5332008E8380 /* MedicationReminderUITestsLaunchTests.swift */; };
 		C070F7B12BD1839E00824B8C /* MedicationDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C070F7B02BD1839E00824B8C /* MedicationDashboard.swift */; };
-		C0D1FDBC2BC8A51100F5E6CE /* medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D1FDBB2BC8A51100F5E6CE /* medication.swift */; };
+		C0D1FDBC2BC8A51100F5E6CE /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D1FDBB2BC8A51100F5E6CE /* Medication.swift */; };
 		C0D1FDC72BC8E27600F5E6CE /* EditMedicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D1FDC62BC8E27600F5E6CE /* EditMedicationView.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,17 +36,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C03A6A5D2B8E5331008E8380 /* Medication Reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Medication Reminder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C03A6A602B8E5331008E8380 /* Medication_ReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication_ReminderApp.swift; sourceTree = "<group>"; };
+		C03A6A5D2B8E5331008E8380 /* MedicationReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicationReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C03A6A602B8E5331008E8380 /* MedicationReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationReminderApp.swift; sourceTree = "<group>"; };
 		C03A6A662B8E5332008E8380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C03A6A692B8E5332008E8380 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C03A6A6F2B8E5332008E8380 /* Medication ReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Medication ReminderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C03A6A732B8E5332008E8380 /* Medication_ReminderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication_ReminderTests.swift; sourceTree = "<group>"; };
-		C03A6A792B8E5332008E8380 /* Medication ReminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Medication ReminderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C03A6A7D2B8E5332008E8380 /* Medication_ReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication_ReminderUITests.swift; sourceTree = "<group>"; };
-		C03A6A7F2B8E5332008E8380 /* Medication_ReminderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication_ReminderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C03A6A692B8E5332008E8380 /* PreviewAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PreviewAssets.xcassets; sourceTree = "<group>"; };
+		C03A6A6F2B8E5332008E8380 /* MedicationReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedicationReminderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C03A6A732B8E5332008E8380 /* MedicationReminderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationReminderTests.swift; sourceTree = "<group>"; };
+		C03A6A792B8E5332008E8380 /* MedicationReminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedicationReminderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C03A6A7D2B8E5332008E8380 /* MedicationReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationReminderUITests.swift; sourceTree = "<group>"; };
+		C03A6A7F2B8E5332008E8380 /* MedicationReminderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationReminderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C070F7B02BD1839E00824B8C /* MedicationDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationDashboard.swift; sourceTree = "<group>"; };
-		C0D1FDBB2BC8A51100F5E6CE /* medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medication.swift; sourceTree = "<group>"; };
+		C0D1FDBB2BC8A51100F5E6CE /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
 		C0D1FDBD2BC8A89600F5E6CE /* Medication-Reminder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Medication-Reminder-Info.plist"; sourceTree = SOURCE_ROOT; };
 		C0D1FDC62BC8E27600F5E6CE /* EditMedicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMedicationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,9 +79,9 @@
 		C03A6A542B8E5331008E8380 = {
 			isa = PBXGroup;
 			children = (
-				C03A6A5F2B8E5331008E8380 /* Medication Reminder */,
-				C03A6A722B8E5332008E8380 /* Medication ReminderTests */,
-				C03A6A7C2B8E5332008E8380 /* Medication ReminderUITests */,
+				C03A6A5F2B8E5331008E8380 /* MedicationReminder */,
+				C03A6A722B8E5332008E8380 /* MedicationReminderTests */,
+				C03A6A7C2B8E5332008E8380 /* MedicationReminderUITests */,
 				C03A6A5E2B8E5331008E8380 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,58 +89,58 @@
 		C03A6A5E2B8E5331008E8380 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C03A6A5D2B8E5331008E8380 /* Medication Reminder.app */,
-				C03A6A6F2B8E5332008E8380 /* Medication ReminderTests.xctest */,
-				C03A6A792B8E5332008E8380 /* Medication ReminderUITests.xctest */,
+				C03A6A5D2B8E5331008E8380 /* MedicationReminder.app */,
+				C03A6A6F2B8E5332008E8380 /* MedicationReminderTests.xctest */,
+				C03A6A792B8E5332008E8380 /* MedicationReminderUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C03A6A5F2B8E5331008E8380 /* Medication Reminder */ = {
+		C03A6A5F2B8E5331008E8380 /* MedicationReminder */ = {
 			isa = PBXGroup;
 			children = (
 				C0D1FDBD2BC8A89600F5E6CE /* Medication-Reminder-Info.plist */,
-				C03A6A602B8E5331008E8380 /* Medication_ReminderApp.swift */,
+				C03A6A602B8E5331008E8380 /* MedicationReminderApp.swift */,
 				C070F7B02BD1839E00824B8C /* MedicationDashboard.swift */,
 				C0D1FDC62BC8E27600F5E6CE /* EditMedicationView.swift */,
-				C0D1FDBB2BC8A51100F5E6CE /* medication.swift */,
+				C0D1FDBB2BC8A51100F5E6CE /* Medication.swift */,
 				C03A6A662B8E5332008E8380 /* Assets.xcassets */,
-				C03A6A682B8E5332008E8380 /* Preview Content */,
+				C03A6A682B8E5332008E8380 /* PreviewContent */,
 			);
-			path = "Medication Reminder";
+			path = MedicationReminder;
 			sourceTree = "<group>";
 		};
-		C03A6A682B8E5332008E8380 /* Preview Content */ = {
+		C03A6A682B8E5332008E8380 /* PreviewContent */ = {
 			isa = PBXGroup;
 			children = (
-				C03A6A692B8E5332008E8380 /* Preview Assets.xcassets */,
+				C03A6A692B8E5332008E8380 /* PreviewAssets.xcassets */,
 			);
-			path = "Preview Content";
+			path = PreviewContent;
 			sourceTree = "<group>";
 		};
-		C03A6A722B8E5332008E8380 /* Medication ReminderTests */ = {
+		C03A6A722B8E5332008E8380 /* MedicationReminderTests */ = {
 			isa = PBXGroup;
 			children = (
-				C03A6A732B8E5332008E8380 /* Medication_ReminderTests.swift */,
+				C03A6A732B8E5332008E8380 /* MedicationReminderTests.swift */,
 			);
-			path = "Medication ReminderTests";
+			path = MedicationReminderTests;
 			sourceTree = "<group>";
 		};
-		C03A6A7C2B8E5332008E8380 /* Medication ReminderUITests */ = {
+		C03A6A7C2B8E5332008E8380 /* MedicationReminderUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C03A6A7D2B8E5332008E8380 /* Medication_ReminderUITests.swift */,
-				C03A6A7F2B8E5332008E8380 /* Medication_ReminderUITestsLaunchTests.swift */,
+				C03A6A7D2B8E5332008E8380 /* MedicationReminderUITests.swift */,
+				C03A6A7F2B8E5332008E8380 /* MedicationReminderUITestsLaunchTests.swift */,
 			);
-			path = "Medication ReminderUITests";
+			path = MedicationReminderUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C03A6A5C2B8E5331008E8380 /* Medication Reminder */ = {
+		C03A6A5C2B8E5331008E8380 /* MedicationReminder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C03A6A832B8E5332008E8380 /* Build configuration list for PBXNativeTarget "Medication Reminder" */;
+			buildConfigurationList = C03A6A832B8E5332008E8380 /* Build configuration list for PBXNativeTarget "MedicationReminder" */;
 			buildPhases = (
 				C03A6A592B8E5331008E8380 /* Sources */,
 				C03A6A5A2B8E5331008E8380 /* Frameworks */,
@@ -150,14 +150,14 @@
 			);
 			dependencies = (
 			);
-			name = "Medication Reminder";
+			name = MedicationReminder;
 			productName = "Medication Reminder";
-			productReference = C03A6A5D2B8E5331008E8380 /* Medication Reminder.app */;
+			productReference = C03A6A5D2B8E5331008E8380 /* MedicationReminder.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C03A6A6E2B8E5332008E8380 /* Medication ReminderTests */ = {
+		C03A6A6E2B8E5332008E8380 /* MedicationReminderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C03A6A862B8E5332008E8380 /* Build configuration list for PBXNativeTarget "Medication ReminderTests" */;
+			buildConfigurationList = C03A6A862B8E5332008E8380 /* Build configuration list for PBXNativeTarget "MedicationReminderTests" */;
 			buildPhases = (
 				C03A6A6B2B8E5332008E8380 /* Sources */,
 				C03A6A6C2B8E5332008E8380 /* Frameworks */,
@@ -168,14 +168,14 @@
 			dependencies = (
 				C03A6A712B8E5332008E8380 /* PBXTargetDependency */,
 			);
-			name = "Medication ReminderTests";
+			name = MedicationReminderTests;
 			productName = "Medication ReminderTests";
-			productReference = C03A6A6F2B8E5332008E8380 /* Medication ReminderTests.xctest */;
+			productReference = C03A6A6F2B8E5332008E8380 /* MedicationReminderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C03A6A782B8E5332008E8380 /* Medication ReminderUITests */ = {
+		C03A6A782B8E5332008E8380 /* MedicationReminderUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C03A6A892B8E5332008E8380 /* Build configuration list for PBXNativeTarget "Medication ReminderUITests" */;
+			buildConfigurationList = C03A6A892B8E5332008E8380 /* Build configuration list for PBXNativeTarget "MedicationReminderUITests" */;
 			buildPhases = (
 				C03A6A752B8E5332008E8380 /* Sources */,
 				C03A6A762B8E5332008E8380 /* Frameworks */,
@@ -186,9 +186,9 @@
 			dependencies = (
 				C03A6A7B2B8E5332008E8380 /* PBXTargetDependency */,
 			);
-			name = "Medication ReminderUITests";
+			name = MedicationReminderUITests;
 			productName = "Medication ReminderUITests";
-			productReference = C03A6A792B8E5332008E8380 /* Medication ReminderUITests.xctest */;
+			productReference = C03A6A792B8E5332008E8380 /* MedicationReminderUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -214,7 +214,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C03A6A582B8E5331008E8380 /* Build configuration list for PBXProject "Medication Reminder" */;
+			buildConfigurationList = C03A6A582B8E5331008E8380 /* Build configuration list for PBXProject "MedicationReminder" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -227,9 +227,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C03A6A5C2B8E5331008E8380 /* Medication Reminder */,
-				C03A6A6E2B8E5332008E8380 /* Medication ReminderTests */,
-				C03A6A782B8E5332008E8380 /* Medication ReminderUITests */,
+				C03A6A5C2B8E5331008E8380 /* MedicationReminder */,
+				C03A6A6E2B8E5332008E8380 /* MedicationReminderTests */,
+				C03A6A782B8E5332008E8380 /* MedicationReminderUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -239,7 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C03A6A6A2B8E5332008E8380 /* Preview Assets.xcassets in Resources */,
+				C03A6A6A2B8E5332008E8380 /* PreviewAssets.xcassets in Resources */,
 				C03A6A672B8E5332008E8380 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,8 +267,8 @@
 			files = (
 				C070F7B12BD1839E00824B8C /* MedicationDashboard.swift in Sources */,
 				C0D1FDC72BC8E27600F5E6CE /* EditMedicationView.swift in Sources */,
-				C0D1FDBC2BC8A51100F5E6CE /* medication.swift in Sources */,
-				C03A6A612B8E5331008E8380 /* Medication_ReminderApp.swift in Sources */,
+				C0D1FDBC2BC8A51100F5E6CE /* Medication.swift in Sources */,
+				C03A6A612B8E5331008E8380 /* MedicationReminderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C03A6A742B8E5332008E8380 /* Medication_ReminderTests.swift in Sources */,
+				C03A6A742B8E5332008E8380 /* MedicationReminderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C03A6A7E2B8E5332008E8380 /* Medication_ReminderUITests.swift in Sources */,
-				C03A6A802B8E5332008E8380 /* Medication_ReminderUITestsLaunchTests.swift in Sources */,
+				C03A6A7E2B8E5332008E8380 /* MedicationReminderUITests.swift in Sources */,
+				C03A6A802B8E5332008E8380 /* MedicationReminderUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,12 +294,12 @@
 /* Begin PBXTargetDependency section */
 		C03A6A712B8E5332008E8380 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C03A6A5C2B8E5331008E8380 /* Medication Reminder */;
+			target = C03A6A5C2B8E5331008E8380 /* MedicationReminder */;
 			targetProxy = C03A6A702B8E5332008E8380 /* PBXContainerItemProxy */;
 		};
 		C03A6A7B2B8E5332008E8380 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C03A6A5C2B8E5331008E8380 /* Medication Reminder */;
+			target = C03A6A5C2B8E5331008E8380 /* MedicationReminder */;
 			targetProxy = C03A6A7A2B8E5332008E8380 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -504,7 +504,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Medication Reminder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Medication Reminder";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MedicationReminder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MedicationReminder";
 			};
 			name = Debug;
 		};
@@ -524,7 +524,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Medication Reminder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Medication Reminder";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MedicationReminder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MedicationReminder";
 			};
 			name = Release;
 		};
@@ -567,7 +567,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C03A6A582B8E5331008E8380 /* Build configuration list for PBXProject "Medication Reminder" */ = {
+		C03A6A582B8E5331008E8380 /* Build configuration list for PBXProject "MedicationReminder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C03A6A812B8E5332008E8380 /* Debug */,
@@ -576,7 +576,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C03A6A832B8E5332008E8380 /* Build configuration list for PBXNativeTarget "Medication Reminder" */ = {
+		C03A6A832B8E5332008E8380 /* Build configuration list for PBXNativeTarget "MedicationReminder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C03A6A842B8E5332008E8380 /* Debug */,
@@ -585,7 +585,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C03A6A862B8E5332008E8380 /* Build configuration list for PBXNativeTarget "Medication ReminderTests" */ = {
+		C03A6A862B8E5332008E8380 /* Build configuration list for PBXNativeTarget "MedicationReminderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C03A6A872B8E5332008E8380 /* Debug */,
@@ -594,7 +594,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C03A6A892B8E5332008E8380 /* Build configuration list for PBXNativeTarget "Medication ReminderUITests" */ = {
+		C03A6A892B8E5332008E8380 /* Build configuration list for PBXNativeTarget "MedicationReminderUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C03A6A8A2B8E5332008E8380 /* Debug */,

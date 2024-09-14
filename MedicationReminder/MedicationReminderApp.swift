@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct Medication_ReminderApp: App {
+struct MedicationReminderApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Medication.self,
