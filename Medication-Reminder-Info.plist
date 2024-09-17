@@ -10,5 +10,7 @@
 	<array>
 		<dict/>
 	</array>
+	<key>NSUserNotificationsUsageDescription</key>
+	<string>The app needs notification permission to remind you to take your medication on time.</string>
 </dict>
 </plist>

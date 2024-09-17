@@ -10,7 +10,7 @@ import SwiftData
 
 struct MedicationDashboard: View {
     @Query private var medications: [Medication]
-
+    
     var body: some View {
         NavigationStack { // Note: NavigationStack for hierarchical navigation
             VStack {
@@ -18,7 +18,7 @@ struct MedicationDashboard: View {
                     .font(.largeTitle)
                 List {
                     ForEach(medications) { medication in
-                        NavigationLink(destination: EditMedicationView(medication: medication)) {
+                        NavigationLink(destination: MedicationFormView(medication: medication)) {
                             MedicationDashboardRow(medication: medication)
                         }
                     }
@@ -28,7 +28,7 @@ struct MedicationDashboard: View {
             .navigationTitle("Dashboard")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: EditMedicationView(medication: nil)) { // Create a new Medication
+                    NavigationLink(destination: MedicationFormView()) {
                         Image(systemName: "plus")
                     }
                 }
@@ -39,22 +39,19 @@ struct MedicationDashboard: View {
 
 struct MedicationDashboardRow: View {
     let medication: Medication
-
+    
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
                 Text(medication.name)
                     .font(.headline)
-                Text("Dosage: \(medication.dosage)")
-            }
-            Spacer()  // Push elements to the left
-
-            // Example: "Active/Inactive" Toggle
+                Text("Dosage: \(medication.dosage)")}
+            Spacer()
             Toggle("", isOn: .constant(medication.isReminderSet))
-                .labelsHidden() // Hide the label for a more compact look
+                .labelsHidden()
         }
     }
-
+    
 }
 
 #Preview {
