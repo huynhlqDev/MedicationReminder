@@ -40,6 +40,7 @@ class MedicationFormViewModel: ObservableObject {
 
     func setContext(context: ModelContext) {
         self.context = context
+
     }
 
     func saveMedication() {
@@ -52,6 +53,7 @@ class MedicationFormViewModel: ObservableObject {
                                   time: remainderTime.timeIntervalSinceReferenceDate,
                                   isReminderSet: isReminderSet,
                                   reminderDays: selectedDays)
+                scheduleNotificationIfNeed(medicationReminder: medication)
             } else {
                 // Create new medication
                 let newMedication = Medication(name: medicationName,
@@ -60,6 +62,7 @@ class MedicationFormViewModel: ObservableObject {
                                                reminderDays:
                                                 selectedDays)
                 context.insert(newMedication)
+                scheduleNotificationIfNeed(medicationReminder: newMedication)
             }
 
             try context.save()
@@ -86,5 +89,50 @@ class MedicationFormViewModel: ObservableObject {
             selectedDays.append(day)
         }
     }
+
+    func scheduleNotificationIfNeed(medicationReminder: Medication) {
+        guard medicationReminder.isReminderSet else { return }
+
+        let futureDate = Date(timeIntervalSinceReferenceDate: medicationReminder.time)
+        let content = UNMutableNotificationContent()
+        content.title = "Medication Reminder"
+        content.body = "You need take \(String(describing: medication?.dosage ?? ""))."
+        content.sound = .default
+
+        UNUserNotificationCenter
+            .current()
+            .removePendingNotificationRequests(withIdentifiers: [medicationReminder.id.uuidString])
+
+        medicationReminder.reminderDays.forEach { reminderDay in
+            var components = Calendar.current.dateComponents([.hour, .minute], from: futureDate)
+            components.weekday = reminderDay.weekday
+
+            addNotification(
+                identifier: medicationReminder.id.uuidString,
+                components: components,
+                content: content
+            )
+        }
+    }
+
+    private func addNotification(
+        identifier: String,
+        components: DateComponents,
+        content: UNMutableNotificationContent
+    ) {
+        var dateComponent = DateComponents(calendar: Calendar.current, timeZone: TimeZone.current)
+        dateComponent.weekday = components.weekday
+        dateComponent.hour = components.hour
+        dateComponent.minute = components.minute
+
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponent,
+                                                    repeats: true)
+        let request = UNNotificationRequest(identifier: identifier,
+                                            content: content,
+                                            trigger: trigger)
+
+        UNUserNotificationCenter.current().add(request)
+    }
+
 }
 

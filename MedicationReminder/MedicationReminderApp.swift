@@ -24,7 +24,7 @@ struct MedicationReminderApp: App {
     }()
 
     init() {
-        requestNotificationPermission()
+        NotificationManager.shared.setupNotificationHandling()
     }
 
     var body: some Scene {
@@ -32,14 +32,6 @@ struct MedicationReminderApp: App {
             MedicationDashboard()
         }
         .modelContainer(sharedModelContainer)
-    }
-
-    func requestNotificationPermission() {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { granted, error in
-            if let error = error {
-                print("Error requesting notification permission: \(error)")
-            }
-        }
     }
 }
 

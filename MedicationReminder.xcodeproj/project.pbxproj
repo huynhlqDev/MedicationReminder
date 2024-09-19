@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		134C39432C9C9211005E66E2 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134C39422C9C9211005E66E2 /* NotificationManager.swift */; };
 		1361D36A2C988EE400422334 /* MedicationFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1361D3692C988EE400422334 /* MedicationFormView.swift */; };
 		1361D36D2C988F5B00422334 /* MedicationFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1361D36C2C988F5B00422334 /* MedicationFormViewModel.swift */; };
 		1361D36F2C99B54A00422334 /* RepeatDaysPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1361D36E2C99B54A00422334 /* RepeatDaysPickerView.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		134C39422C9C9211005E66E2 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		1361D3692C988EE400422334 /* MedicationFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationFormView.swift; sourceTree = "<group>"; };
 		1361D36C2C988F5B00422334 /* MedicationFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationFormViewModel.swift; sourceTree = "<group>"; };
 		1361D36E2C99B54A00422334 /* RepeatDaysPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatDaysPickerView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				C0D1FDBB2BC8A51100F5E6CE /* Medication.swift */,
+				134C39422C9C9211005E66E2 /* NotificationManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				1361D36A2C988EE400422334 /* MedicationFormView.swift in Sources */,
 				1361D36F2C99B54A00422334 /* RepeatDaysPickerView.swift in Sources */,
 				1361D36D2C988F5B00422334 /* MedicationFormViewModel.swift in Sources */,
+				134C39432C9C9211005E66E2 /* NotificationManager.swift in Sources */,
 				C0D1FDBC2BC8A51100F5E6CE /* Medication.swift in Sources */,
 				C03A6A612B8E5331008E8380 /* MedicationReminderApp.swift in Sources */,
 			);
