@@ -23,7 +23,7 @@ class MedicationFormViewModel: ObservableObject {
             return "Every day"
         } else {
             return selectedDays.map {
-                $0.title
+                $0.rawValue
             }.joined(separator: ",")
         }
     }

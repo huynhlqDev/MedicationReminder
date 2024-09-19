@@ -16,7 +16,7 @@ struct RepeatDaysPickerView: View {
             List(ReminderDay.allCases, id: \.self) { day in
                 Button(action: {toggleDaySelection(day)}) {
                     HStack {
-                        Text(day.rawValue)
+                        Text(day.title)
                             .foregroundStyle(.dynamicTextColor)
                         Spacer()
                         if selectedDays.contains(day) {

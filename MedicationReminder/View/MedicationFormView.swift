@@ -32,6 +32,7 @@ struct MedicationFormView: View {
                                displayedComponents: .hourAndMinute)
                     Toggle("Reminder", isOn: $viewModel.isReminderSet)
                 }
+                .foregroundStyle(.appStyle)
                 deleteButton
             }
         }
@@ -74,7 +75,6 @@ struct MedicationFormView: View {
             label: {
                 HStack {
                     Text("Repeat")
-                        .foregroundStyle(.dynamicTextColor)
                     Spacer()
                     Text(viewModel.repeatDescription)
                 }

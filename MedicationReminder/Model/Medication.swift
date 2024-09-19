@@ -8,23 +8,23 @@ import Foundation
 import SwiftData
 
 enum ReminderDay: String, Codable, CaseIterable {
-    case monday = "Monday"
-    case tuesday = "Tuesday"
-    case wednesday = "Wednesday"
-    case thursday = "Thursday"
-    case friday = "Friday"
-    case saturday = "Saturday"
-    case sunday = "Sunday"
+    case monday = "Mon"
+    case tuesday = "Tue"
+    case wednesday = "Wed"
+    case thursday = "Thu"
+    case friday = "Fri"
+    case saturday = "Sat"
+    case sunday = "Sun"
 
     var title: String {
         switch self {
-        case .monday: "Mon"
-        case .tuesday: "Tue"
-        case .wednesday: "Wed"
-        case .thursday: "Thu"
-        case .friday: "Fri"
-        case .saturday: "Sat"
-        case .sunday: "Sun"
+        case .monday: "Monday"
+        case .tuesday: "Tuesday"
+        case .wednesday: "Wednesday"
+        case .thursday: "Thursday"
+        case .friday: "Friday"
+        case .saturday: "Saturday"
+        case .sunday: "Sunday"
         }
     }
 }
